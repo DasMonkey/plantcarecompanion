@@ -3,15 +3,8 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-b from-nature to-white">
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1518495973542-4542c06a5843"
-          alt="Plant background"
-          className="w-full h-full object-cover opacity-20"
-        />
-      </div>
-      <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 sm:py-32">
+    <div className="relative overflow-hidden bg-gradient-to-b from-nature to-white py-20 sm:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-text sm:text-6xl">
             Your Ultimate Plant Care Companion

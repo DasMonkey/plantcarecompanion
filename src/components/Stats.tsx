@@ -31,22 +31,18 @@ export const Stats = () => {
               ))}
             </div>
           </div>
-          <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1501854140801-50d01698950b"
-              alt="Plant statistics"
-              className="rounded-2xl shadow-xl w-full h-[400px] object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-white/80 to-transparent rounded-2xl">
-              <div className="p-8 space-y-4">
-                {features.map((feature) => (
-                  <div key={feature} className="flex items-center gap-3 animate-fade-up">
-                    <Check className="h-5 w-5 text-primary" />
-                    <span className="text-text-muted">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="space-y-8">
+            <h3 className="text-2xl font-semibold text-text">
+              Everything You Need for Healthy Plants
+            </h3>
+            <ul className="space-y-4">
+              {features.map((feature) => (
+                <li key={feature} className="flex items-center gap-3 animate-fade-up">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-text-muted">{feature}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 interface ImageTextBlockProps {
   title: string;
@@ -32,6 +33,11 @@ export const ImageTextBlock = ({
             <p className="mt-6 text-lg leading-8 text-text-muted">
               {description}
             </p>
+            <div className="mt-8">
+              <Button size="lg" className="bg-primary hover:bg-primary-dark text-white">
+                Get Started Free
+              </Button>
+            </div>
           </div>
           <div 
             className={cn(
